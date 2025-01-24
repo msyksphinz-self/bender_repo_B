@@ -5,6 +5,8 @@ module B
    output outC
    );
 
-assign outC = inA + inB;
+always_comb begin
+  outC = inA + inB;
+end
 
 endmodule // B
